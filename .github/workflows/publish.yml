@@ -8,7 +8,9 @@ on:
   # 当master分支有push时，触发action
   push: 
     branches:
-      - master
+      - main
+    tags:
+      - "v*"
   
   # 当一个pr被合并到master时，触发action
   #pull_request:
