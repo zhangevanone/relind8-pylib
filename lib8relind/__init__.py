@@ -2,8 +2,8 @@ import smbus
 
 # bus = smbus.SMBus(1)    # 0 = /dev/i2c-0 (port I2C0), 1 = /dev/i2c-1 (port I2C1)
 
-DEVICE_ADDRESS = 0x38  # 7 bit address (will be left shifted to add the read write bit)
-ALTERNATE_DEVICE_ADDRESS = 0x20  # 7 bit address (will be left shifted to add the read write bit)
+DEVICE_ADDRESS = 0x20  # 7 bit address (will be left shifted to add the read write bit)
+ALTERNATE_DEVICE_ADDRESS = 0x38  # 7 bit address (will be left shifted to add the read write bit)
 
 RELAY8_INPORT_REG_ADD = 0x00
 RELAY8_OUTPORT_REG_ADD = 0x01
